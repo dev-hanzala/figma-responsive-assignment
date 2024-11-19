@@ -2,19 +2,19 @@ import Image from "next/image"
 
 const Footer = () => {
 	return (
-    <footer className="flex flex-col justify-center items-center py-12 px-6 gap-12">
-      <div className="flex flex-col justify-center items-center gap-12">
-        <div className="flex flex-col justify-center items-center gap-6 w-full">
-          <div className="flex flex-col justify-center items-center gap-4">
-            <h2 className="font-semibold text-lg text-center">
+    <footer className="flex flex-col justify-center items-center py-12 px-6 xl:p-20 gap-12 xl:gap-20 xl:mt-[50px] xl:mb-[90px]">
+      <div className="flex flex-col justify-center items-center gap-12 xl:gap-20 xl:w-full">
+        <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:items-start gap-6 xl:gap-0 w-full">
+          <div className="flex flex-col justify-center items-center xl:items-start gap-4 xl:w-full">
+            <h2 className="font-semibold text-lg text-center xl:text-left">
               Subscribe to our newsletter
             </h2>
-            <p className="text-center">
+            <p className="text-center xl:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4 w-full">
-            <form className="flex flex-col justify-center items-center gap-4 w-full">
+          <div className="flex flex-col justify-center items-center xl:items-start gap-4 w-full">
+            <form className="flex flex-col xl:flex-row justify-center items-center gap-4 w-full">
               <input
                 placeholder="Enter your email"
                 type="email"
@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-8">
+        <div className="flex flex-col xl:flex-row justify-center items-start xl:justify-between xl:w-full gap-8 xl:gap-10">
           <div className="flex justify-center items-center gap-[10px]">
             <Image src={"/logo.svg"} alt="logo" height={30} width={32} />
             <span className="font-inter font-bold text-2xl">Ddsgnr</span>
@@ -68,8 +68,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-8 w-full">
           <hr className="border border-black w-full" />
-          <div className="flex flex-col justify-center items-center gap-6">
-            <div className="flex flex-col justify-center items-center gap-6">
+          <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center gap-6 xl:w-full">
+            <div className="flex flex-col xl:flex-row justify-center xl:justify-start items-center gap-6">
               <p className="text-center text-sm">
                 2023 Ddsgnr. All right reserved.
               </p>

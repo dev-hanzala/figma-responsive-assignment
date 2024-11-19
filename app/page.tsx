@@ -737,7 +737,7 @@ export default function Home() {
         </button>
       </div>
       {/* Testimonials */}
-      <div className="flex flex-col justify-center items-center xl:items-start py-12 xl:py-28 px-6 xl:px-16 gap-12 xl:gap-20">
+      <div className="flex flex-col justify-center items-center xl:bg-[#f7f7f7] xl:items-start py-12 xl:py-28 px-6 xl:px-16 gap-12 xl:gap-20">
         <div className="flex flex-col justify-center items-center xl:items-start gap-6">
           <h2 className="xl:hidden font-bold text-[32px]/[40px] text-center">
             What Our Student Say
