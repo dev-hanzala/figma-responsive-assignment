@@ -296,7 +296,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-1.png"}
                   alt="course-image-1"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
@@ -336,7 +336,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-2.png"}
                   alt="course-image-2"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
@@ -378,7 +378,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-3.png"}
                   alt="course-image-3"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
@@ -423,7 +423,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-4.png"}
                   alt="course-image-4"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
@@ -463,7 +463,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-5.png"}
                   alt="course-image-5"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
@@ -503,7 +503,7 @@ export default function Home() {
                 <Image
                   src={"/course-image-6.png"}
                   alt="course-image-6"
-                  width={380}
+                  width={400}
                   height={300}
                   className="w-full"
                 />
