@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <div className="flex flex-col xl:flex-row justify-center items-center">
+      <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center">
         <div className="flex flex-col justify-center items-start py-16 xl:py-0 xl:pr-[60px] xl:pl-20 px-6 gap-6">
           <div className="flex flex-col justify-center items-start gap-6">
             <h1 className="font-bold text-[40px]/[48px] xl:text-[56px]/[68px]">
