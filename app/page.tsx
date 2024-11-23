@@ -16,7 +16,7 @@ export default function Home() {
               taught by expert instructors.
             </p>
           </div>
-          <div className="flex items-center justify-start pt-4 gap-2 sm:gap-4">
+          <div className="flex items-center justify-start gap-2 pt-4 sm:gap-4">
             <Button className="text-sm sm:text-base">Start learning now</Button>
             <Button variant={"outline"} className="">
               Explore Courses
