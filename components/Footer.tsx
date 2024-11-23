@@ -1,84 +1,84 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Footer = () => {
-	return (
-    <footer className="flex flex-col justify-center items-center py-12 px-6 xl:p-20 gap-12 xl:gap-20 xl:mt-[50px] xl:mb-[90px]">
-      <div className="flex flex-col justify-center items-center gap-12 xl:gap-20 xl:w-full">
-        <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:items-start gap-6 xl:gap-0 w-full">
-          <div className="flex flex-col justify-center items-center xl:items-start gap-4 xl:w-full">
-            <h2 className="font-semibold text-lg text-center xl:text-left">
+  return (
+    <footer className="flex flex-col items-center justify-center gap-12 px-6 py-12 xl:mb-[90px] xl:mt-[50px] xl:gap-20 xl:p-20">
+      <div className="flex flex-col items-center justify-center gap-12 xl:w-full xl:gap-20">
+        <div className="flex w-full flex-col items-center justify-center gap-6 xl:flex-row xl:items-start xl:justify-between xl:gap-0">
+          <div className="flex flex-col items-center justify-center gap-4 xl:w-full xl:items-start">
+            <h2 className="text-center text-lg font-semibold xl:text-left">
               Subscribe to our newsletter
             </h2>
             <p className="text-center xl:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center xl:items-start gap-4 w-full">
-            <form className="flex flex-col xl:flex-row justify-center items-center gap-4 w-full">
+          <div className="flex w-full flex-col items-center justify-center gap-4 xl:items-start">
+            <form className="flex w-full flex-col items-center justify-center gap-4 xl:flex-row">
               <input
                 placeholder="Enter your email"
                 type="email"
-                className="w-full p-3 border border-black rounded-[5px]"
+                className="w-full rounded-[5px] border border-black p-3"
               />
-              <button className="w-full px-6 py-3 border border-black rounded-[5px]">
+              <button className="w-full rounded-[5px] border border-black px-6 py-3">
                 Subscribe
               </button>
             </form>
-            <p className="text-sm text-center">
+            <p className="text-center text-sm">
               By subscribing you agree to with our{" "}
               <span className="underline">Privacy Policy</span>
             </p>
           </div>
         </div>
-        <div className="flex flex-col xl:flex-row justify-center items-start xl:justify-between xl:w-full gap-8 xl:gap-10">
-          <div className="flex justify-center items-center gap-[10px]">
+        <div className="flex flex-col items-start justify-center gap-8 xl:w-full xl:flex-row xl:justify-between xl:gap-10">
+          <div className="flex items-center justify-center gap-[10px]">
             <Image src={"/logo.svg"} alt="logo" height={30} width={32} />
-            <span className="font-inter font-bold text-2xl">Ddsgnr</span>
+            <span className="font-inter text-2xl font-bold">Ddsgnr</span>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
-            <h3 className="font-semibold text-center">Courses</h3>
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h3 className="text-center font-semibold">Courses</h3>
             <div>
-              <p className="py-2 text-sm text-center">Business</p>
-              <p className="py-2 text-sm text-center">Development</p>
-              <p className="py-2 text-sm text-center">Technology</p>
-              <p className="py-2 text-sm text-center">Design</p>
-              <p className="py-2 text-sm text-center">Programming</p>
+              <p className="py-2 text-center text-sm">Business</p>
+              <p className="py-2 text-center text-sm">Development</p>
+              <p className="py-2 text-center text-sm">Technology</p>
+              <p className="py-2 text-center text-sm">Design</p>
+              <p className="py-2 text-center text-sm">Programming</p>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
-            <h3 className="font-semibold text-center">Resources</h3>
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h3 className="text-center font-semibold">Resources</h3>
             <div>
-              <p className="py-2 text-sm text-center">Career</p>
-              <p className="py-2 text-sm text-center">Resume</p>
-              <p className="py-2 text-sm text-center">Learning</p>
-              <p className="py-2 text-sm text-center">Interview Preperation</p>
-              <p className="py-2 text-sm text-center">Jobs</p>
+              <p className="py-2 text-center text-sm">Career</p>
+              <p className="py-2 text-center text-sm">Resume</p>
+              <p className="py-2 text-center text-sm">Learning</p>
+              <p className="py-2 text-center text-sm">Interview Preperation</p>
+              <p className="py-2 text-center text-sm">Jobs</p>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-4">
-            <h3 className="font-semibold text-center">About Us</h3>
+          <div className="flex flex-col items-center justify-center gap-4">
+            <h3 className="text-center font-semibold">About Us</h3>
             <div>
-              <p className="py-2 text-sm text-center">Contact</p>
-              <p className="py-2 text-sm text-center">Help/Support</p>
-              <p className="py-2 text-sm text-center">FAQ</p>
-              <p className="py-2 text-sm text-center">Terms and Conditions</p>
-              <p className="py-2 text-sm text-center">Partners</p>
+              <p className="py-2 text-center text-sm">Contact</p>
+              <p className="py-2 text-center text-sm">Help/Support</p>
+              <p className="py-2 text-center text-sm">FAQ</p>
+              <p className="py-2 text-center text-sm">Terms and Conditions</p>
+              <p className="py-2 text-center text-sm">Partners</p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-8 w-full">
-          <hr className="border border-black w-full" />
-          <div className="flex flex-col xl:flex-row justify-center xl:justify-between items-center gap-6 xl:w-full">
-            <div className="flex flex-col xl:flex-row justify-center xl:justify-start items-center gap-6">
+        <div className="flex w-full flex-col items-center justify-center gap-8">
+          <hr className="w-full border border-black" />
+          <div className="flex flex-col items-center justify-center gap-6 xl:w-full xl:flex-row xl:justify-between">
+            <div className="flex flex-col items-center justify-center gap-6 xl:flex-row xl:justify-start">
               <p className="text-center text-sm">
                 2023 Ddsgnr. All right reserved.
               </p>
               <div className="flex items-center gap-6">
-                <p className="underline text-sm text-center">Privacy Policy</p>
-                <p className="underline text-sm text-center">
+                <p className="text-center text-sm underline">Privacy Policy</p>
+                <p className="text-center text-sm underline">
                   Terms of Service
                 </p>
-                <p className="underline text-sm text-center">
+                <p className="text-center text-sm underline">
                   Cookies Settings
                 </p>
               </div>
@@ -114,6 +114,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;
