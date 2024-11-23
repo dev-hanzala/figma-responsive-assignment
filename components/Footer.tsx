@@ -4,19 +4,19 @@ import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center gap-12 px-6 py-12 xl:mb-[90px] xl:mt-[50px] xl:gap-20 xl:p-20">
-      <div className="flex flex-col items-center justify-center gap-12 xl:w-full xl:gap-20">
-        <div className="flex w-full flex-col items-center justify-center gap-6 xl:flex-row xl:items-start xl:justify-between xl:gap-0">
-          <div className="flex flex-col items-center justify-center gap-4 xl:w-full xl:items-start">
-            <h2 className="text-center text-lg font-semibold xl:text-left">
+    <footer className="flex flex-col items-center justify-center gap-12 px-6 py-12 lg:mb-[90px] lg:mt-[50px] lg:gap-20 lg:p-20">
+      <div className="flex flex-col items-center justify-center gap-12 lg:w-full lg:gap-20">
+        <div className="flex w-full flex-col items-center justify-center gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
+          <div className="flex flex-col items-center justify-center gap-4 lg:w-full lg:items-start">
+            <h2 className="text-center text-lg font-semibold lg:text-left">
               Subscribe to our newsletter
             </h2>
-            <p className="text-center xl:text-left">
+            <p className="text-center lg:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-4 xl:items-start">
-            <form className="flex w-full flex-col items-center justify-center gap-4 xl:flex-row">
+          <div className="flex w-full flex-col items-center justify-center gap-4 lg:items-start">
+            <form className="flex w-full flex-col items-center justify-center gap-4 lg:flex-row">
               <Input
                 placeholder="Enter your email"
                 type="email"
@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-start justify-center gap-8 xl:w-full xl:flex-row xl:justify-between xl:gap-10">
+        <div className="flex flex-col items-start justify-center gap-8 lg:w-full lg:flex-row lg:justify-between lg:gap-10">
           <div className="flex items-center justify-center gap-[10px]">
             <Image src={"/logo.svg"} alt="logo" height={30} width={32} />
             <span className="font-inter text-2xl font-bold">Ddsgnr</span>
@@ -68,8 +68,8 @@ const Footer = () => {
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-8">
           <hr className="w-full border border-black" />
-          <div className="flex flex-col items-center justify-center gap-6 xl:w-full xl:flex-row xl:justify-between">
-            <div className="flex flex-col items-center justify-center gap-6 xl:flex-row xl:justify-start">
+          <div className="flex flex-col items-center justify-center gap-6 lg:w-full lg:flex-row lg:justify-between">
+            <div className="flex flex-col items-center justify-center gap-6 lg:flex-row lg:justify-start">
               <p className="text-center text-sm">
                 2023 Ddsgnr. All right reserved.
               </p>

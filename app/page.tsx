@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <div className="flex flex-col items-center justify-center xl:flex-row xl:justify-between">
-        <div className="flex flex-col items-start justify-center gap-6 px-6 py-16 xl:py-0 xl:pl-20 xl:pr-[60px]">
+      <div className="flex flex-col items-start justify-center lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col items-start justify-center gap-6 px-6 py-16 lg:py-0 lg:pl-20 lg:pr-[60px]">
           <div className="flex flex-col items-start justify-center gap-6">
-            <h1 className="text-[40px]/[48px] font-bold xl:text-[56px]/[68px]">
+            <h1 className="text-[40px]/[48px] font-bold lg:text-[56px]/[68px]">
               Learn new skills online with ease
             </h1>
             <p className="text-lg">
@@ -16,9 +16,11 @@ export default function Home() {
               taught by expert instructors.
             </p>
           </div>
-          <div className="flex items-center justify-start gap-4 pt-4">
-            <Button>Start learning now</Button>
-            <Button variant={"outline"}>Explore Courses</Button>
+          <div className="flex items-center justify-start pt-4 gap-2 sm:gap-4">
+            <Button className="text-sm sm:text-base">Start learning now</Button>
+            <Button variant={"outline"} className="">
+              Explore Courses
+            </Button>
           </div>
         </div>
         <Image
@@ -26,12 +28,12 @@ export default function Home() {
           alt="hero"
           width={1200}
           height={1800}
-          className="h-[800px] w-screen object-cover object-top xl:h-auto xl:w-[50vw]"
+          className="h-[800px] w-screen object-cover object-top lg:h-auto lg:w-[50vw]"
         />
       </div>
       {/* Marquee */}
-      <div className="flex flex-col items-start justify-center gap-6 px-6 py-12 xl:flex-row xl:gap-16 xl:bg-[#f7f7f7] xl:px-16 xl:py-20">
-        <p className="text-lg font-bold xl:text-2xl">
+      <div className="flex flex-col items-start justify-center gap-6 px-6 py-12 lg:flex-row lg:gap-16 lg:bg-[#f7f7f7] lg:px-16 lg:py-20">
+        <p className="text-lg font-bold lg:text-2xl">
           Trusted by the world&apos;s best companies [social proof to build
           credibility]
         </p>
@@ -75,9 +77,9 @@ export default function Home() {
         </div>
       </div>
       {/* Category */}
-      <div className="flex flex-col items-center justify-center gap-12 px-6 py-28 xl:gap-20">
-        <div className="flex flex-col items-center justify-center gap-6 xl:items-start">
-          <h2 className="text-center text-[32px]/[40px] font-bold xl:text-5xl">
+      <div className="flex flex-col items-center justify-center gap-12 px-6 py-28 lg:gap-20">
+        <div className="flex flex-col items-center justify-center gap-6 lg:items-start">
+          <h2 className="text-center text-[32px]/[40px] font-bold lg:text-5xl">
             Explore Courses By Category
           </h2>
           <p className="text-center text-lg">
@@ -86,9 +88,9 @@ export default function Home() {
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-16">
-          <div className="xl:flex xl:flex-col xl:items-center xl:justify-center xl:gap-16">
+          <div className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-16">
             {/* first */}
-            <div className="flex flex-col items-center justify-center gap-6 xl:flex-row">
+            <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
               <div className="flex w-full items-center justify-center gap-8 rounded-[5px] bg-[#F7F7F7] p-4">
                 <Image
                   src={"/cource-icon-1.svg"}
@@ -132,7 +134,7 @@ export default function Home() {
               </div>
             </div>
             {/* second */}
-            <div className="hidden flex-col items-center justify-center gap-6 xl:flex xl:flex-row">
+            <div className="hidden flex-col items-center justify-center gap-6 lg:flex lg:flex-row">
               <div className="flex w-full items-center justify-center gap-8 rounded-[5px] bg-[#F7F7F7] p-4">
                 <Image
                   src={"/cource-icon-4.svg"}
@@ -174,7 +176,7 @@ export default function Home() {
               </div>
             </div>
             {/* third */}
-            <div className="hidden flex-col items-center justify-center gap-6 xl:flex xl:flex-row">
+            <div className="hidden flex-col items-center justify-center gap-6 lg:flex lg:flex-row">
               <div className="flex w-full items-center justify-center gap-8 rounded-[5px] bg-[#F7F7F7] p-4">
                 <Image
                   src={"/cource-icon-7.svg"}
@@ -220,46 +222,46 @@ export default function Home() {
         </div>
       </div>
       {/* Achivements */}
-      <div className="flex flex-col items-center justify-center gap-12 px-6 py-12 xl:gap-8 xl:py-28">
-        <div className="flex flex-col items-center justify-center gap-4 xl:gap-6">
-          <h2 className="text-center text-[32px]/[40px] font-bold xl:text-5xl">
+      <div className="flex flex-col items-center justify-center gap-12 px-6 py-12 lg:gap-8 lg:py-28">
+        <div className="flex flex-col items-center justify-center gap-4 lg:gap-6">
+          <h2 className="text-center text-[32px]/[40px] font-bold lg:text-5xl">
             Our Achivements
           </h2>
-          <p className="text-center text-lg xl:hidden">
+          <p className="text-center text-lg lg:hidden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique.
           </p>
-          <p className="hidden text-center text-lg xl:block">
+          <p className="hidden text-center text-lg lg:block">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique. Duis cursus, mi quis
             viverra ornare, eros dolor interdum nulla, ut commodo diam libero
             vitae erat.
           </p>
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-6 xl:flex-row">
-          <div className="flex items-center justify-center gap-4 py-2 xl:gap-6">
+        <div className="flex w-full flex-col items-center justify-center gap-6 lg:flex-row">
+          <div className="flex items-center justify-center gap-4 py-2 lg:gap-6">
             <div className="px-16">
-              <h3 className="text-center text-xl font-bold xl:text-[40px]/[48px]">
+              <h3 className="text-center text-xl font-bold lg:text-[40px]/[48px]">
                 +200
               </h3>
               <p className="text-center">Courses</p>
             </div>
             <div className="px-16">
-              <h3 className="text-center text-xl font-bold xl:text-[40px]/[48px]">
+              <h3 className="text-center text-xl font-bold lg:text-[40px]/[48px]">
                 +200
               </h3>
               <p className="text-center">Courses</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-4 py-2 xl:gap-6">
+          <div className="flex items-center justify-center gap-4 py-2 lg:gap-6">
             <div className="px-16">
-              <h3 className="text-center text-xl font-bold xl:text-[40px]/[48px]">
+              <h3 className="text-center text-xl font-bold lg:text-[40px]/[48px]">
                 +200
               </h3>
               <p className="text-center">Courses</p>
             </div>
             <div className="px-16">
-              <h3 className="text-center text-xl font-bold xl:text-[40px]/[48px]">
+              <h3 className="text-center text-xl font-bold lg:text-[40px]/[48px]">
                 +200
               </h3>
               <p className="text-center">Courses</p>
@@ -268,9 +270,9 @@ export default function Home() {
         </div>
       </div>
       {/* Cources */}
-      <div className="flex flex-col items-start justify-center gap-12 px-6 py-12 xl:px-16 xl:py-28">
+      <div className="flex flex-col items-start justify-center gap-12 px-6 py-12 lg:px-16 lg:py-28">
         <div className="flex w-full flex-col items-center justify-center gap-4">
-          <h2 className="text-center text-[32px]/[40px] font-bold xl:text-5xl">
+          <h2 className="text-center text-[32px]/[40px] font-bold lg:text-5xl">
             Courses
           </h2>
           <p className="text-center">Your Ultimate Guide to learning</p>
@@ -288,9 +290,9 @@ export default function Home() {
             </Button>
           </div>
           {/* Courses */}
-          <div className="xl:flex xl:flex-col xl:items-center xl:justify-center xl:gap-16">
+          <div className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-16">
             {/* First */}
-            <div className="flex flex-col items-center justify-center gap-8 xl:flex-row">
+            <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
               <div className="flex flex-col items-center justify-center gap-6 rounded-[5px] bg-[#f7f7f7]">
                 <Image
                   src={"/course-image-1.png"}
@@ -429,7 +431,7 @@ export default function Home() {
               </div>
             </div>
             {/* Second */}
-            <div className="hidden items-center justify-center gap-8 xl:flex">
+            <div className="hidden items-center justify-center gap-8 lg:flex">
               <div className="flex flex-col items-center justify-center gap-6 rounded-[5px] bg-[#f7f7f7]">
                 <Image
                   src={"/course-image-4.png"}
@@ -570,16 +572,16 @@ export default function Home() {
         </div>
       </div>
       {/* Team */}
-      <div className="flex flex-col items-center justify-center gap-12 bg-[#f7f7f7] px-6 py-12 xl:gap-20 xl:px-16 xl:py-28">
+      <div className="flex flex-col items-center justify-center gap-12 bg-[#f7f7f7] px-6 py-12 lg:gap-20 lg:px-16 lg:py-28">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-center text-[32px]/[40px] font-bold xl:text-5xl">
+          <h2 className="text-center text-[32px]/[40px] font-bold lg:text-5xl">
             Our team
           </h2>
           <p className="text-center text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center gap-12 xl:w-full xl:flex-row xl:justify-evenly xl:gap-0">
+        <div className="flex flex-col items-center justify-center gap-12 lg:w-full lg:flex-row lg:justify-evenly lg:gap-0">
           <div className="flex flex-col items-center justify-center gap-6">
             <Image src={"/team-1.png"} alt="team-1" height={80} width={80} />
             <div className="flex flex-col items-center justify-center">
@@ -666,7 +668,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hidden flex-col items-center justify-center gap-12 xl:flex xl:w-full xl:flex-row xl:justify-evenly xl:gap-0">
+        <div className="hidden flex-col items-center justify-center gap-12 lg:flex lg:w-full lg:flex-row lg:justify-evenly lg:gap-0">
           <div className="flex flex-col items-center justify-center gap-6">
             <Image src={"/team-4.png"} alt="team-4" height={80} width={80} />
             <div className="flex flex-col items-center justify-center">
@@ -753,25 +755,25 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Button variant={"outline"} className="xl:hidden">
+        <Button variant={"outline"} className="lg:hidden">
           View All
         </Button>
       </div>
       {/* Testimonials */}
-      <div className="flex flex-col items-center justify-center gap-12 px-6 py-12 xl:items-start xl:gap-20 xl:bg-[#f7f7f7] xl:px-16 xl:py-28">
-        <div className="flex flex-col items-center justify-center gap-6 xl:items-start">
-          <h2 className="text-center text-[32px]/[40px] font-bold xl:hidden">
+      <div className="flex flex-col items-center justify-center gap-12 px-6 py-12 lg:items-start lg:gap-20 lg:bg-[#f7f7f7] lg:px-16 lg:py-28">
+        <div className="flex flex-col items-center justify-center gap-6 lg:items-start">
+          <h2 className="text-center text-[32px]/[40px] font-bold lg:hidden">
             What Our Student Say
           </h2>
-          <h2 className="hidden text-5xl font-bold xl:block">
+          <h2 className="hidden text-5xl font-bold lg:block">
             Customer testimonials
           </h2>
-          <p className="text-center text-lg xl:text-start">
+          <p className="text-center text-lg lg:text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-12">
-          <div className="items-center justify-center gap-8 xl:flex">
+          <div className="items-center justify-center gap-8 lg:flex">
             <div className="flex w-full flex-col items-start justify-center gap-6 border border-black p-8">
               <Image src={"/stars.svg"} alt="stars" width={116} height={19} />
               <div className="flex w-full flex-col items-start justify-center gap-6">
@@ -789,13 +791,13 @@ export default function Home() {
                   />
                   <div className="flex flex-col items-start justify-center">
                     <h3 className="font-semibold">Wade Warren</h3>
-                    <p className="xl:hidden">Position, Company name</p>
-                    <p className="hidden xl:block">Software Developer</p>
+                    <p className="lg:hidden">Position, Company name</p>
+                    <p className="hidden lg:block">Software Developer</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="hidden w-full flex-col items-start justify-center gap-6 border border-black p-8 xl:flex">
+            <div className="hidden w-full flex-col items-start justify-center gap-6 border border-black p-8 lg:flex">
               <Image src={"/stars.svg"} alt="stars" width={116} height={19} />
               <div className="flex w-full flex-col items-start justify-center gap-6">
                 <p className="text-lg">
@@ -817,7 +819,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="hidden w-full flex-col items-start justify-center gap-6 border border-black p-8 xl:flex">
+            <div className="hidden w-full flex-col items-start justify-center gap-6 border border-black p-8 lg:flex">
               <Image src={"/stars.svg"} alt="stars" width={116} height={19} />
               <div className="flex w-full flex-col items-start justify-center gap-6">
                 <p className="text-lg">

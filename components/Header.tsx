@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   return (
     <header>
-      <div className="hidden border-b border-b-black px-16 xl:block xl:bg-[#f7f7f7]">
+      <div className="hidden border-b border-b-black px-16 lg:block lg:bg-[#f7f7f7]">
         <div className="flex w-full items-center justify-between gap-8 py-3">
           <div className="flex items-center justify-center gap-4">
             <p className="text-sm">Phone Number: 956 742 455 678</p>
@@ -34,14 +34,14 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="border-b border-b-black xl:bg-[#f7f7f7]">
-        <div className="mx-6 my-3 flex items-center justify-center gap-8 xl:mx-16 xl:my-[14px] xl:justify-between xl:gap-0">
-          <div className="flex flex-grow items-center justify-start gap-2 px-2 xl:py-[29px]">
+      <div className="border-b border-b-black lg:bg-[#f7f7f7]">
+        <div className="mx-6 my-3 flex items-center justify-center gap-8 lg:mx-16 lg:my-[14px] lg:justify-between lg:gap-0">
+          <div className="flex flex-grow items-center justify-start gap-2 px-2 lg:py-[29px]">
             <Image src="/logo.svg" alt="logo" width={32} height={30} />
             <span className="font-inter text-2xl font-bold">Ddsgnr</span>
           </div>
-          <div className="hidden gap-8 bg-white xl:flex">
-            <div className="flex gap-8">
+          <div className="hidden gap-8 bg-white lg:flex">
+            <div className="flex xl:gap-8 lg:6">
               <Button variant={"underlined"} size={"sm"}>
                 Home
               </Button>
@@ -67,7 +67,7 @@ const Header = () => {
             </div>
           </div>
           {/* Mobile Menu Icon */}
-          <div className="flex flex-grow-0 items-center justify-center p-6 xl:hidden">
+          <div className="flex flex-grow-0 items-center justify-center p-6 lg:hidden">
             <Image src="/menu.svg" alt="menu" width={24} height={24} />
           </div>
         </div>
