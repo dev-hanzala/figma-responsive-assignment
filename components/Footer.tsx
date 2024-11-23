@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
@@ -15,14 +17,12 @@ const Footer = () => {
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-4 xl:items-start">
             <form className="flex w-full flex-col items-center justify-center gap-4 xl:flex-row">
-              <input
+              <Input
                 placeholder="Enter your email"
                 type="email"
-                className="w-full rounded-[5px] border border-black p-3"
+                className="border-black"
               />
-              <button className="w-full rounded-[5px] border border-black px-6 py-3">
-                Subscribe
-              </button>
+                <Button variant={"outline"} className="w-full h-12">Subscribe</Button>
             </form>
             <p className="text-center text-sm">
               By subscribing you agree to with our{" "}

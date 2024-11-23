@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
@@ -41,20 +42,28 @@ const Header = () => {
           </div>
           <div className="hidden gap-8 bg-white xl:flex">
             <div className="flex gap-8">
-              <button className="border-b border-black p-[10px]">Home</button>
-              <button className="p-[10px]">Courses</button>
-              <button className="p-[10px]">Services</button>
-              <button className="p-[10px]">Achievement</button>
-              <button className="p-[10px]">About Us</button>
-              <button className="p-[10px]">Testimonial</button>
+              <Button variant={"underlined"} size={"sm"}>
+                Home
+              </Button>
+              <Button variant={"secondary"} size={"sm"}>
+                Courses
+              </Button>
+              <Button variant={"secondary"} size={"sm"}>
+                Services
+              </Button>
+              <Button variant={"secondary"} size={"sm"}>
+                Achievement
+              </Button>
+              <Button variant={"secondary"} size={"sm"}>
+                About Us
+              </Button>
+              <Button variant={"secondary"} size={"sm"}>
+                Testimonial
+              </Button>
             </div>
             <div className="flex gap-4">
-              <button className="rounded-[5px] border border-black px-5 py-2">
-                Login
-              </button>
-              <button className="rounded-[5px] border border-black bg-black px-5 py-2 text-white">
-                Sign Up
-              </button>
+                <Button size={"md"}>Login</Button>
+                <Button variant={"outline"} size={"md"}>Sign Up</Button>
             </div>
           </div>
           {/* Mobile Menu Icon */}

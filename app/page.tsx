@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -16,12 +17,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex items-center justify-start gap-4 pt-4">
-            <button className="rounded-[5px] border border-black bg-black px-6 py-3 text-white">
-              Start learning now
-            </button>
-            <button className="rounded-[5px] border border-black px-6 py-3">
-              Explore Courses
-            </button>
+            <Button>Start learning now</Button>
+            <Button variant={"outline"}>Explore Courses</Button>
           </div>
         </div>
         <Image
@@ -219,9 +216,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button className="rounded-[5px] border border-black px-6 py-3">
-            View All Courses
-          </button>
+          <Button variant={"outline"}>View All Courses</Button>
         </div>
       </div>
       {/* Achivements */}
@@ -282,11 +277,15 @@ export default function Home() {
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-16">
           <div className="flex items-center justify-center">
-            <button className="border-b border-black px-4 py-2 text-center">
+            <Button variant={"underlined"} size={"sm"}>
               Popular
-            </button>
-            <button className="px-4 py-2 text-center">Recommended</button>
-            <button className="px-4 py-2 text-center">Best Price</button>
+            </Button>
+            <Button variant={"secondary"} size={"sm"}>
+              Recommended
+            </Button>
+            <Button variant={"secondary"} size={"sm"}>
+              Best Price
+            </Button>
           </div>
           {/* Courses */}
           <div className="xl:flex xl:flex-col xl:items-center xl:justify-center xl:gap-16">
@@ -323,12 +322,16 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -365,12 +368,16 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -407,12 +414,16 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -450,12 +461,16 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -490,12 +505,16 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -532,20 +551,22 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex w-full gap-4">
-                    <button className="rounded-[5px] border border-black px-5 py-2">
+                    <Button
+                      variant={"outline"}
+                      size={"md"}
+                      className="bg-[#f7f7f7]"
+                    >
                       Enroll Now
-                    </button>
-                    <button className="rounded-[5px]font-medium px-5 py-2">
+                    </Button>
+                    <span className="rounded-[5px]font-medium px-5 py-2 text-center">
                       $400
-                    </button>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <button className="rounded-[5px] border border-black px-4 py-2">
-            View All Courses
-          </button>
+          <Button variant={"outline"}>View All Courses</Button>
         </div>
       </div>
       {/* Team */}
@@ -732,9 +753,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <button className="rounded-[5px] border border-black px-4 py-2 xl:hidden">
+        <Button variant={"outline"} className="xl:hidden">
           View All
-        </button>
+        </Button>
       </div>
       {/* Testimonials */}
       <div className="flex flex-col items-center justify-center gap-12 px-6 py-12 xl:items-start xl:gap-20 xl:bg-[#f7f7f7] xl:px-16 xl:py-28">
@@ -822,17 +843,17 @@ export default function Home() {
           <div className="flex w-full items-center justify-between">
             <Image src={"/dots.svg"} alt="dots" height={8} width={72} />
             <div className="flex items-center justify-center gap-[15px]">
-              <button className="rounded-[50px] border border-black p-3">
+              <Button variant={"outline"} size={"icon"}>
                 <Image
                   src={"/previous.svg"}
                   alt="previous"
                   height={24}
                   width={24}
                 />
-              </button>
-              <button className="rounded-[50px] border border-black p-3">
+              </Button>
+              <Button variant={"outline"} size={"icon"}>
                 <Image src={"/next.svg"} alt="next" height={24} width={24} />
-              </button>
+              </Button>
             </div>
           </div>
         </div>
